@@ -1,0 +1,6 @@
+name: ServerManager
+version: ${project.version}
+main: io.github.zap.servermanager.ServerManager
+api-version: 1.16
+authors: [ Steank ]
+description: Exposes an API for ZombiesPlugin that manages basic global tasks and routes players between servers
