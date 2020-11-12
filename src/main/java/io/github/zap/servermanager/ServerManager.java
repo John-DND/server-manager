@@ -28,6 +28,8 @@ public final class ServerManager extends JavaPlugin implements PluginMessageList
     @SuppressWarnings("UnstableApiUsage")
     @Override
     public void onPluginMessageReceived(String channel, Player player, byte[] message) {
+        getLogger().info("Received PluginMessage.");
+
         if(channel.equals(BUNGEE_CHANNEl)) {
             ByteArrayDataInput input = ByteStreams.newDataInput(message);
             String subchannel = input.readUTF();
